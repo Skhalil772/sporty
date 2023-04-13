@@ -6,3 +6,88 @@
 	padding: 0;
 	margin: 0;
 }
+
+/* Define the animation */
+@keyframes underline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+/* Apply the animation to the text */
+.nav__text {
+	position: relative;
+	display: inline-block;
+}
+
+.nav__text::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	transition: width 0.5s ease-in-out;
+}
+
+.nav__text:hover::before {
+	width: 100%;
+	animation-name: underline;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+.logo {
+	font-family: "Roboto", sans-serif;
+}
+/* Navbar style */
+.navbar-toggle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding: 4px;
+}
+
+.navbar-toggle-icon {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	position: absolute;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle-icon::before {
+	transform: translateY(-8px);
+}
+
+.navbar-toggle-icon::after {
+	transform: translateY(8px);
+}
+
+.navbar-toggle.active .navbar-toggle-icon {
+	transform: rotate(45deg);
+	background-color: transparent;
+}
+
+.navbar-toggle.active .navbar-toggle-icon::before {
+	transform: translateY(0) rotate(0deg);
+}
+
+.navbar-toggle.active .navbar-toggle-icon::after {
+	transform: translateY(0) rotate(-90deg);
+}
