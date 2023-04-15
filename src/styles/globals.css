@@ -92,6 +92,9 @@
 	transform: translateY(0) rotate(-90deg);
 }
 /* IMAGE GALLERY  */
+.productitem__container:hover .top-image {
+	opacity: 0;
+}
 /* .gallery__parent__text {
 	transform: scale(0.5);
 	animation: scale 3s ease-in cubic-bezier(0.5, 1, 0.89, 1);

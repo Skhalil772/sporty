@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navbar";
 import ImageSlider from "@/components/ImageSlider";
 import HomeGrid from "@/components/HomeGrid";
+import ProductCard from "@/components/ProductCard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,25 @@ export default function Home() {
 			</Head>
 			<Navbar />
 			<ImageSlider />
+			<section className="container mx-auto px-6 my-12">
+				<h1 className=" text-2xl sm:text-3xl font-normal my-4 text-center">
+					Our Purpose
+				</h1>
+				<p className="text-gray-500 max-w-2xl text-center mx-auto">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+					harum fugiat esse qui, consequuntur veritatis.
+				</p>
+			</section>
 			<HomeGrid />
+			<section className="grid-cols-5 container mx-auto grid gap-6">
+				<ProductCard />
+				<ProductCard />
+				<ProductCard />
+				<ProductCard />
+				<ProductCard />
+				<ProductCard />
+				<ProductCard />
+			</section>
 		</>
 	);
 }
