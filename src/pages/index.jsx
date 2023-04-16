@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import ImageSlider from "@/components/ImageSlider";
 import HomeGrid from "@/components/HomeGrid";
 import ProductCard from "@/components/ProductCard";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,7 +40,7 @@ export default function Home() {
 				</p>
 			</section>
 			<HomeGrid />
-			<section className="grid-cols-5 container mx-auto grid gap-6">
+			<section className="grid-cols-1 px-6 mt-6 mb-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 container mx-auto grid gap-6">
 				<ProductCard />
 				<ProductCard />
 				<ProductCard />
@@ -48,6 +49,8 @@ export default function Home() {
 				<ProductCard />
 				<ProductCard />
 			</section>
+			<section className="bg-blue-400 h-[50vh] my-10 p-6">Newsletter</section>
+			<Footer />
 		</>
 	);
 }
