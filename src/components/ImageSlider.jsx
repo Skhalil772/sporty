@@ -31,10 +31,11 @@ const ImageSlider = () => {
 				{SlideImage.map((item) => (
 					<div
 						key={item._id}
-						className="slide-wrapper px-40 mx-auto   ">
+						className="slide-wrapper md:px-40 mx-auto   ">
 						<div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-							<div className="slide-image flex justify-center">
+							<div className="slide-image flex justify-center mt-6 rounded-lg ">
 								<Image
+									className="rounded-lg"
 									width={400}
 									height={500}
 									src={require(`../assets/image-${item._id}.jpg`)}

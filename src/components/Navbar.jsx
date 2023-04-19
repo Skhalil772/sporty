@@ -42,12 +42,12 @@ function Navbar() {
 			</main>
 			<aside>
 				<div
-					className={` duration-500 md:hidden ${
+					className={` duration-500 lg:hidden ${
 						Open
-							? "bg-black/40 absolute !top-16 inset-0 opacity-100"
+							? "bg-black/40 absolute !top-16 z-10 inset-0 opacity-100"
 							: "opacity-0"
 					}`}></div>
-				<div className="md:hidden ">
+				<div className="lg:hidden ">
 					<div
 						className={`z-10 duration-1000 p-10  absolute top-16 left-0 right-1/3 bottom-0 ${
 							Open ? "bg-white " : " bg-white -translate-x-full "
