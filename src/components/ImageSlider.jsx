@@ -10,7 +10,6 @@ import image4 from "../assets/image-4.jpg";
 // import "./ImageSlider.css";
 import Image from "next/image";
 const ImageSlider = () => {
-	console.log(SlideImage);
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -18,7 +17,7 @@ const ImageSlider = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 50000,
+		autoplaySpeed: 5000,
 		pauseOnHover: true,
 		arrows: false,
 	};

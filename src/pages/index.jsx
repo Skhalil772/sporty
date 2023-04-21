@@ -49,7 +49,36 @@ export default function Home() {
 				<ProductCard />
 				<ProductCard />
 			</section>
-			<section className="bg-blue-400 h-[50vh] my-10 p-6">Newsletter</section>
+			<section className="container mx-auto px-6 my-12 flex">
+				<div className="text-gray-500 md:w-1/2 text-center md:text-left">
+					<h3 className="text-2xl font-semibold text-black">
+						Get The Newsletter
+					</h3>
+					<p className="my-4 ">
+						Get great stuff in your inbox, no-nonsense. Only the essentials.
+						That’s a promise from us.
+					</p>
+					<div className="border-b-2 p-1 border-gray-500 flex gap-4">
+						<input
+							placeholder="Your email address"
+							className="outline-0 p-1 w-full  placeholder:text-gray-500"
+							type="email"
+						/>
+						<button className="w-fit font-semibold text-gray-800">
+							SUBSCRIBE
+						</button>
+					</div>
+				</div>
+				<div className="md:w-1/2 mt-12 h-fit my-auto flex justify-around md:justify-center font-semibold text-gray-800 gap-4">
+					<button className="hover:text-gray-500 duration-300">
+						Privacy Policy
+					</button>
+					<button className="hover:text-gray-500 duration-300">
+						Sizing Guide
+					</button>
+					<button className="hover:text-gray-500 duration-300">FAQ</button>
+				</div>
+			</section>{" "}
 			<Footer />
 		</>
 	);
