@@ -10,7 +10,7 @@ function HomeGrid() {
 			<div className="grid__image-4 bg-gray-400 relative w-full ml-auto  ">
 				<Image
 					fill
-					cover
+					cover="true"
 					className="border-2 border-black"
 					alt="arsenal"
 					src="https://images.unsplash.com/photo-1551854304-9235bf86ef71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></Image>{" "}
